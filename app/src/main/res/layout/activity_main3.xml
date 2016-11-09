@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.lakshit.assignment_4.Main3Activity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/Toolbar.TitleText"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleTextColor="@android:color/white"
+        android:fitsSystemWindows="true"
+        android:background="@color/colorOrangeDark">
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Title :"
+        android:id="@+id/add_title"
+        android:layout_marginTop="61dp"
+        android:layout_below="@+id/textView"
+        android:layout_toStartOf="@+id/textView"
+        android:layout_marginEnd="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Note :"
+        android:id="@+id/add_note"
+        android:layout_marginTop="59dp"
+        android:layout_below="@+id/add_title"
+        android:layout_alignStart="@+id/add_title" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/CodeFont"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Add To Do "
+        android:id="@+id/textView"
+        android:layout_marginTop="46dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_title_text"
+        android:layout_alignBottom="@+id/add_title"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginStart="46dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_note_text"
+        android:layout_alignBottom="@+id/add_note"
+        android:layout_alignStart="@+id/add_title_text" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        android:id="@+id/button_add"
+        android:layout_marginTop="100dp"
+        style="@style/button_text"
+        android:layout_below="@+id/add_note_text"
+        android:layout_centerHorizontal="true" />
+    <!--<View style="@style/CodeFont"/>-->
+
+
+</RelativeLayout>
